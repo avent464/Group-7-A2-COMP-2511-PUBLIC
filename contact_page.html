@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style/contact_styling.css">
+
+    <meta name="keywords" content="MRU, Computer Science, Mount Royal University, Contact">
+    <meta name="description" content="Form to contact website authors">
+    <meta name="author" content="Louise Monungolh">
+    <meta name="author" content="Ayla Ventura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="box"></div>
+      <a href="main_page.html" style="text-decoration: none; color: inherit;">
+      <img id = "logo" src = 'images/loula_logo.jpg' width = '170' height = '62' alt = 'group logo'>
+      </a>
+      <h1 class="main_header"> CONTACT US </h1>
+      <div id="options_box"></div>
+      <div class="box"></div><br>
+      <!-- navigation Menu -->
+      <nav>
+        <ol>
+          <li id="return_home"><a href="main_page.html">Return Home</a></li>  
+          <li id="schedules"><a href="schedules_page.html">Possible Schedules</a></li>
+          <li id="possible_careers"><a href="careers_page.html">Possible Careers</a></li>
+          <li id="courses"><a href="course_page.html">Courses </a></li>
+        </ol>
+      </nav><br>
+    </header>
+
+    <form action="mailto:avent464@mtroyal.ca" method="post" enctype="text/plain">
+      <article id="contact_form">
+        <h2>Contact Us</h2>
+
+        <article id="contact_note">
+          <p>If you have further questions, comments, or concerns, please contact us by filling out the information below:</p><br><br>
+        </article>
+      
+        <!-- subject input (required, max length) -->
+        <label for="subject">Subject:<span class="required">*</span></label><br>
+        <input type="text" id="subject" maxlength="100" required><br><br>
+      
+        <!-- email input (required, with placeholder and pattern) -->
+        <label for="email">Email address:<span class="required">*</span></label><br>
+        <input type="email" id="email"
+            placeholder="name@domain.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br><br>
+      
+        <!-- phone number input (optional, with placeholder and pattern) -->
+        <label for="phone">Phone number (optional):</label>
+        <input type="tel" id="phone"
+            placeholder="123-456-7890"
+            pattern="0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"><br><br>
+      
+        <!-- Inquiry body textarea (required) -->
+        <label for="message">Your message to us:<span class="required">*</span></label><br>
+        <textarea id="message" rows="6" cols="40" required></textarea><br><br>
+      
+        <!-- radio buttons (email is default)-->
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" id="contact_email" value="Email" checked>
+        <label for="contact_email">Email</label><br>
+        <input type="radio" id="contact_phone" value="Phone">
+        <label for="contact_phone">Phone</label><br><br>
+      
+        <!-- checkboxes -->
+        <label>Reason for contact:</label><br>
+        <input type="checkbox" id="topic_general" value="General">
+        <label for="topic_general">General Inquiry</label><br>
+        <input type="checkbox" id="topic_support" value="Support">
+        <label for="topic_support">Support Request</label><br><br>
+      
+        <!-- date input -->
+        <label for="preferred_date">Preferred Contact Date:</label><br>
+        <input type="date" id="preferred_date"><br><br>
+
+      
+        <!-- buttons -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </article>
+    </form>    
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Louise and Ayla</p>
+    </footer>
+
+  </body>
+
+</html>
