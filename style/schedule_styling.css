@@ -1,0 +1,211 @@
+h1 {
+    color: #2E5266;
+    text-align: left;
+    margin-left: 200px;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 40px; 
+}
+
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.description {
+    font-size: 20px;
+}
+
+h2 {
+    color: #6E8898;
+    text-align: center;
+}
+
+.box {
+    height: 2px;
+    width: 1850px;
+    background-color: #2E5266;
+}
+
+#options_box{
+    height: 45px;
+    width: 1150px;
+    position: absolute;
+    top: 40px;
+    left: 700px;
+    background-color: #6e8898;
+    border: 2px solid #2E5266;
+}
+a {
+    text-decoration: none;
+    color: #e2c044;
+}
+a[href^="https"] {
+  color: #e2c044;
+}
+
+nav a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* found list-style-type through https://www.w3schools.com/cssref/pr_list-style-type.php */
+#return_home{
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 770px;
+}
+#possible_careers{
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 970px;
+}
+#courses{
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 1170px;
+}
+
+#contact{
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 1340px;
+}
+
+.box2 {
+    position: absolute;
+    left: 200px;
+    height: 2px;
+    width: 1150px;
+    background-color: #D3D0CB;
+}
+
+body {
+    text-align: center;
+    background-color:#ffffff ;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+table{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.site_footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 0.9rem;
+  }
+
+/* found transform on https://www.w3schools.com/cssref/css3_pr_transform.php */
+#four_year table {
+    text-align: center;
+    transform: translateX(-200px);
+    border-collapse: collapse;
+}
+
+th {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+#five_year table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+td {
+    width: 110px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.fall_sem{
+    background-color: #e2c044;
+    color: black;
+}
+
+.winter_sem{
+    background-color: #6e8898;
+    color: white;
+}
+
+/* Alternates colours after every other one */
+tr:nth-child(4n) {
+  background-color: #D3D0CB;
+}
+
+* {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+/*found hover on https://www.w3schools.com/css/css_table_style.asp */
+tr:hover {
+    background-color: #9fb1bc;
+}
+
+#img {
+    position: absolute;
+    top: 525px;
+    right: 300px;
+}
+
+#img_caption{
+    font-weight: bold;
+    position: absolute;
+    top: 480px;
+    right: 370px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#box3 {
+    height: 245px;
+    width: 317px;
+    border: 3px solid #2E5266;
+    background-color: #9fb1bc;
+    position: absolute;
+    top: 495px;
+    right: 290px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#img2{
+    position: absolute;
+    top: 850px;
+    right: 300px;
+}
+
+#img_caption2{
+    font-weight: bold;
+    position: absolute;
+    top: 805px;
+    right: 380px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#box4{
+    height: 245px;
+    width: 317px;
+    border: 3px solid #2E5266;
+    background-color: #9fb1bc;
+    position: absolute;
+    top: 815px;
+    right: 290px; 
+}
