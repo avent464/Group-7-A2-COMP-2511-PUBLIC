@@ -1,176 +1,67 @@
-.main_header {
-    color: #2E5266;
-    text-align: left;
-    margin-left: 200px;
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    font-size: 40px; 
-}
-
-/* all course layout */
-
-#core_courses {
-    background-color: #f0f8ff;
-    border-left: 4px solid #2E5266;
-    padding: 20px;
-    margin: 30px auto;
-    max-width: 800px;
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    text-align: left;
-}
-
-#cognate_courses {
-    background-color: #f0f8ff;
-    border-left: 4px solid #2E5266;
-    padding: 20px;
-    margin: 30px auto;
-    max-width: 800px;
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    text-align: left;
-}
-
-#option_courses {
-    background-color: #f0f8ff;
-    border-left: 4px solid #2E5266;
-    padding: 20px;
-    margin: 30px auto;
-    max-width: 800px;
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    text-align: left;
-}
-
-#gned_courses {
-    background-color: #f0f8ff;
-    border-left: 4px solid#2E5266;
-    padding: 20px;
-    margin: 30px auto;
-    max-width: 800px;
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    text-align: left;
-}
-
-#elective_courses {
-    background-color: #f0f8ff;
-    border-left: 4px solid#2E5266;
-    padding: 20px;
-    margin: 30px auto;
-    max-width: 800px;
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    line-height: 1.5;
-    text-align: left;
-}
-
-#options_box{
-    height: 45px;
-    width: 1150px;
-    position: absolute;
-    top: 40px;
-    left: 700px;
-    background-color: #6e8898;
-    border: 2px solid #2E5266;
-}
-
-.site_footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    color: #333;
-    font-size: 0.9rem;
-  }
-
-/* default */
-
-h1 {
-    color: #2E5266;
-    text-align: center;
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-    font-size: 40px; 
-}
-#logo {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-}
-.description {
-    font-size: 20px;
-}
-
-h2 {
-    color: #6E8898;
-    text-align: center;
-}
-
-h3 {
-    color: #6E8898;
-    text-align: center;
-}
-
-p{
-    max-width: 1000px;
+/* container */
+.responsive-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1200px;
     margin: 0 auto;
-}
-.box {
-    height: 2px;
-    width: 1850px;
-    background-color: #2E5266;
-}
-
-a {
-    text-decoration: none;
-    color: #e2c044;
-}
-a[href^="https"] {
-  color: #e2c044;
-}
-
-nav a{
-    color:#ffffff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-/* found list-style-type through https://www.w3schools.com/cssref/pr_list-style-type.php */
-#return_home{
-    list-style-type: none;
-    position: absolute;
-    top: 52px;
-    left: 770px;
-}
-#possible_careers{
-    list-style-type: none;
-    position: absolute;
-    top: 52px;
-    left: 970px;
-}
-#schedules{
-    list-style-type: none;
-    position: absolute;
-    top: 52px;
-    left: 1170px;
-}
-#contact{
-    list-style-type: none;
-    position: absolute;
-    top: 52px;
-    left: 1370px;
-}
-
-.box2 {
-    position: absolute;
-    left: 200px;
-    height: 2px;
-    width: 1150px;
-    background-color: #D3D0CB;
-}
-
-body {
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+/* menu */
+  nav ol {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0.5rem 1rem;
+  }
+  
+  /* main content */
+  article {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+  
+  details {
+    margin-bottom: 1rem;
+  }
+  
+  footer.site-footer {
+    padding: 1rem;
     text-align: center;
-    background-color:#ffffff ;
-}
-
-* {
-    font-family: Calibri, Arial, Helvetica, sans-serif;
-}
+  }
+  
+  /* structure */
+  h1, h2 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+  }
+  
+  p {
+    max-width: 1000px;
+    margin: 0 auto 1rem;
+  }
+  
+  /* placeholder (disabled) */
+  .box, .box2, #options_box {
+    display: none;
+  }
+  
+  #logo {
+    display: block;
+    margin: 1rem auto;
+  }
+  
+  
