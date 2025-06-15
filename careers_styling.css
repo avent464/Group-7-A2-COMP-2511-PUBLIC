@@ -1,0 +1,123 @@
+.main_header {
+    color: #2E5266;
+    text-align: left;
+    margin-left: 200px;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 40px; 
+}
+h1 {
+    color: #2E5266;
+    text-align: center;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 40px; 
+}
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+.description {
+    font-size: 20px;
+}
+
+h2 {
+    color: #6E8898;
+    text-align: center;
+}
+
+h3 {
+    color: #6E8898;
+    text-align: center;
+}
+
+p{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.box {
+    height: 2px;
+    width: 1850px;
+    background-color: #2E5266;
+}
+
+.career {
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    border-left: 6px solid #2E5266;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+#options_box{
+    height: 45px;
+    width: 1150px;
+    position: absolute;
+    top: 40px;
+    left: 700px;
+    background-color: #6e8898;
+    border: 2px solid #2E5266;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #e2c044;
+}
+a[href^="https"] {
+  color: #e2c044;
+}
+
+nav a{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* found list-style-type through https://www.w3schools.com/cssref/pr_list-style-type.php */
+#return_home{
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 770px;
+}
+#schedules{
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 970px;
+}
+#courses{
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 1170px;
+}
+#contact{
+    list-style-type: none;
+    position: absolute;
+    top: 52px;
+    left: 1370px;
+}
+
+.box2 {
+    position: absolute;
+    left: 200px;
+    height: 2px;
+    width: 1150px;
+    background-color: #D3D0CB;
+}
+
+body {
+    text-align: center;
+    background-color:#ffffff ;
+}
+
+* {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
