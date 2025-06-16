@@ -13,23 +13,23 @@
   </head>
 
   <body>
-    <header>
+    <header class = "header-grid">
       <div class="box"></div>
       <a href="index.html" style="text-decoration: none; color: inherit;">
-        <img id="logo" src="images/loula_logo.jpg" width="170" height="62" alt="group logo">
+        <img id="logo" src="images/loula_logo.jpg" width="169" height="62" alt="group logo">
       </a>
-      <h1 class="main_header"> CAREERS </h1>
+  
+      <h1 class="main_header"> HOME </h1>
+  
+      <!-- navigation menu -->
       <div id="options_box"></div>
-      <div class="box"></div><br>
-
-      <nav>
-        <ol>
-          <li id="return_home"><a href="index.html">Return Home</a></li>  
-          <li id="schedules"><a href="schedules_page.html">Possible Schedules</a></li>
-          <li id="courses"><a href="course_page.html">Courses</a></li>
-          <li id="contact"><a href="contact_page.html">Contact Us</a></li>
-        </ol>
-      </nav><br>
+      <div class="box"></div>
+      <nav class="nav-menu">
+        <div id="schedules"><a href="schedules_page.html">Possible Schedules</a></div>
+        <div id="return_home"><a href="index.html">Return Home</a></div>
+        <div id="courses"><a href="course_page.html">Courses</a></div>
+        <div id="contact"><a href="contact_page.html">Contact Us</a></div>
+      </nav>
     </header>
 
     <section id="careers">
@@ -76,8 +76,32 @@
 
     <p><a href="#top">Return to top</a></p><br>
 
-    <footer class="site-footer">
-      <p>&copy; 2025 Louise and Ayla</p>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="index.html">
+            <img src="images/loula_logo.jpg" width="169" height="62" alt="group logo">
+          </a>
+        </div>
+    
+        <div class="footer-center">
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="contact_page.html">Contact</a>
+            <a href="courses_page.html">Courses</a>
+            <a href="careers_page.html">Schedules</a>
+          </nav>
+          <p>Created for COMP 2511 – Mount Royal University</p>
+          <p>&copy; 2025 Louise and Ayla</p>
+        </div>
+    
+        <div class="footer-right">
+          <a href="index.html">
+            <img src="images/loula_logo.jpg" width="169" height="62" alt="group logo">
+          </a>
+        </div>
+      </div>
     </footer>
+
   </body>
 </html>
