@@ -64,4 +64,119 @@
     margin: 1rem auto;
   }
   
-  
+header {
+  background: radial-gradient(ellipse at top left, #2E5266, #9FB1BC);
+  border: 2px groove #2E5266;
+}
+
+/* nav links */
+nav a {
+  font-size: 20px;
+  background-color: #6e8898;
+  border: 2px solid #2E5266;
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+/* course boxes */
+.grid-item {
+  background: linear-gradient(to bottom, #9FB1BC, #6e8898);
+  border: 3px solid #2E5266;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+}
+
+/* course details  */
+details {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  color: black;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer.site-footer {
+  background-color: #2E5266;
+  border: 2px groove #2E5266;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+/* breakpoints */
+@media (max-width: 589px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 590px) and (max-width: 789px) {
+  .responsive-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 790px) {
+  .responsive-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* main content visuala */
+
+.grid-item {
+  background: linear-gradient(to bottom, #9FB1BC, #6e8898);
+  border: 3px solid #2E5266;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+details {
+  background-color: #fefefe;
+  border: 2px solid #6e8898;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  color: #2E5266;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  font-size: 20px;
+  background-color: #6e8898;
+  border: 2px solid #2E5266;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #5c7685;
+}
