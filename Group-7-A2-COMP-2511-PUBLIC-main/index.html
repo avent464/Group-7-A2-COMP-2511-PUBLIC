@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>Loula - Computer Science</title>
+  <link rel="stylesheet" href="style/index.css">
+
+  <meta name="keywords" content="MRU, Computer Science, Mount Royal University, Schedule, Career, Contact">
+  <meta name="description" content="Informational guide about the Computer Science program at Mount Royal University">
+  <meta name="author" content="Louise Monungolh">
+  <meta name="author" content="Ayla Ventura">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <header class = "header-grid">
+    <div class="box"></div>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+      <img id="logo" src="images/loula_logo.jpg" width="169" height="62" alt="group logo">
+    </a>
+
+    <h1 class="main_header"> HOME </h1>
+
+    <div id="options_box"></div>
+    <div class="box"></div>
+    <nav class="nav-menu">
+      <div id="schedules"><a href="schedules_page.html">Possible Schedules</a></div>
+      <div id="courses"><a href="course_page.html">Courses</a></div>
+      <div id="possible_careers"><a href="careers_page.html">Possible Careers</a></div>
+      <div id="contact"><a href="contact_page.html">Contact Us</a></div>
+    </nav>
+  </header>
+
+  <article>
+    <h1>Welcome to Our Website!</h1>
+    <p><img id="two_frens" src="images/two_people.jpg" alt="happy friends doodle" width="612" height="510"></p>
+    <p class="description">
+      Our informational website provides resources that are designed to help current and prospective
+      students explore the Computer Science program at Mount Royal University. It provides detailed 
+      outlines of all available courses and curriculum, including possible schedule layouts to assist 
+      with academic planning. Visitors can also discover the wide range of career opportunities that 
+      a degree in Computer Science can lead to.
+    </p><br>
+
+    <h3>Our Goal</h3>
+    <p>
+      Our goal for this website is to be able to provide the information that we believe would be useful for people who are interested in possibly pursuing a
+      degree in Computer Science. As students, we had some troubles finding things when searching about the degree and what we could do with it. Our hope is 
+      to be able to condense the information into one website so it would make learning more about the degree very efficient!
+    </p><br>
+
+    <div class="box2"></div>
+    <h2>What is Computer Science?</h2>
+    <p>
+      Computer Science is the study of computers, software, and the principles that govern how they work. It involves learning how to design, write, 
+      and improve computer programs, understand how data is processed and stored, and solve real-world problems using technology. The field combines 
+      creativity, logic, and problem-solving to build everything from apps and websites to artificial intelligence and cybersecurity systems.
+    </p>
+  </article><br>
+
+  <div class="box2"></div>
+
+  <section>
+    <h2>Interested in learning more?</h2>
+    <p>These will lead you to more information about the degree!</p>
+
+    <section class="responsive-grid">
+      
+      <div class="grid-item">
+        <h3><a class = "link" href="course_page.html">Courses at MRU!</h3>
+        <img src="images/courses_photo.jpg" width="300" height="200" alt="Student raising up her hand">
+        <p class="course_desc">Explore Computer Science courses offered at MRU including descriptions and outcomes.</p>
+        </a>
+      </div>
+
+      <div class="grid-item">
+        <h3><a class = "link" href="careers_page.html">Potential Careers!</h3>
+        <img src="images/careers_photo.jpg" width="300" height="200" alt="Developer working on his computer">
+        <p class="course_desc">Explore career options available after graduation like development, cybersecurity, and more.</p>
+        </a>
+      </div>
+
+      <div class="grid-item">
+        <h3><a class = "link" href="schedules_page.html">Schedules for Students!</h3>
+        <img src="images/schedule_pic.jpg" width="306" height="204" alt="Person making their schedule">
+        <p class="course_desc">Check out sample schedules to help plan your academic journey at MRU.</p>
+        </a>
+      </div>
+
+      <div class="grid-item">
+        <h3><a class = "link" href="contact_page.html">Questions? Contact Us!</h3>
+        <img src="images/contact_photo.jpg" width="306" height="204" alt="IT guys helping a person">
+        <p class="course_desc">Have questions? Use the contact page to get in touch with us directly.</p>
+        </a>
+      </div>
+    </section>
+  </section>
+  <br>
+  <div class="box2"></div>
+  <section>
+
+    <form action="mailto:avent464@mtroyal.ca" method="post" enctype="text/plain">
+      <article id="contact_form">
+        <h2>Contact Us</h2>
+
+        <article id="contact_note">
+          <p class="italic">If you have further questions, comments, or concerns, please contact us by filling out the information below:</p><br>
+        </article>
+      
+        <!-- subject input (required, max length) -->
+        <label for="subject">Subject:<span class="required">*</span></label><br>
+        <input type="text" id="subject" maxlength="100" required><br><br>
+      
+        <!-- email input (required, with placeholder and pattern) -->
+        <label for="email">Email address:<span class="required">*</span></label><br>
+        <input type="email" id="email"
+            placeholder="name@domain.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br><br>
+      
+        <!-- phone number input (optional, with placeholder and pattern) -->
+        <label for="phone">Phone number (optional):</label>
+        <input type="tel" id="phone"
+            placeholder="123-456-7890"
+            pattern="0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"><br><br>
+      
+        <!-- inquiry body textarea (required) -->
+        <label for="message">Your message to us:<span class="required">*</span></label><br>
+        <textarea id="message" rows="6" cols="40" required></textarea><br><br>
+      
+        <!-- radio buttons (email is default)-->
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" id="contact_email" value="Email" checked>
+        <label for="contact_email">Email</label><br>
+        <input type="radio" id="contact_phone" value="Phone">
+        <label for="contact_phone">Phone</label><br><br>
+      
+        <!-- checkboxes -->
+        <label>Reason for contact:</label><br>
+        <input type="checkbox" id="topic_general" value="General">
+        <label for="topic_general">General Inquiry</label><br>
+        <input type="checkbox" id="topic_support" value="Support">
+        <label for="topic_support">Support Request</label><br><br>
+      
+        <!-- date input -->
+        <label for="preferred_date">Preferred Contact Date:</label><br>
+        <input type="date" id="preferred_date"><br><br>
+
+      
+        <!-- buttons -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </article>
+    </form>    
+  </section>
+  <br>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <a href="index.html">
+        <img src="images/loula_logo.jpg" width="169" height="62" alt="group logo">
+      </a>
+    </div>
+
+    <div class="footer-center">
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="course_page.html">Courses</a>
+        <a href="careers_page.html">Careers</a>
+        <a href="careers_page.html">Schedules</a>
+      </nav>
+      <p>Created for COMP 2511 – Mount Royal University</p>
+      <p>&copy; 2025 Louise and Ayla</p>
+    </div>
+
+    <div class="footer-right">
+      <a href="index.html">
+        <img src="images/loula_logo.jpg" width="169" height="62" alt="group logo">
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+
+</html>
