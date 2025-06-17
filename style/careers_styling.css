@@ -17,16 +17,6 @@ header {
   border: 2px groove #2E5266;
 }
 
-.header-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-  gap: 1rem;
-}
-
 #logo {
   margin: 15px;
 }
@@ -34,7 +24,7 @@ header {
 .main_header {
   color: white;
   font-size: 40px;
-  text-align: left;
+  text-align: center;
   margin: 0;
   flex-grow: 1;
 }
@@ -50,11 +40,10 @@ header {
 
 .nav-menu > div a {
     font-size: 24px;
-    background-color: #6e8898;
-    border-width: 2px;
-    border-color: #2E5266;
+      background-color: white;
+      border: 2px solid #2E5266;
+      color: #2E5266;
     border-style: solid;
-    color: white;
     padding: 5px 25px;
     text-decoration: none; 
 
@@ -136,9 +125,9 @@ a[href="#top"] {
 
     .nav-menu > div a {
       font-size: 25px;
-      background-color: #6e8898;
+      background-color: white;
       border: 2px solid #2E5266;
-      color: white;
+      color: #2E5266;
       padding:5px 20px;
       width: 80%;           /* make buttons fill more horizontal space */
       text-align: center;
@@ -190,6 +179,18 @@ a[href="#top"] {
 
 /* Footer – Tablet (590px–789px) */
 @media (min-width: 590px) and (max-width: 789px) {
+    .header-grid {
+      display: flex;
+      flex-direction: row;
+      justify-content:left;
+    }
+
+    #logo {
+      margin: 15px;
+    }
+    .main_header {
+      flex-grow: 1;
+    }
     .nav-menu {
       display: flex;
       flex-direction: row;
@@ -200,11 +201,10 @@ a[href="#top"] {
 
     .nav-menu > div a {
       font-size: 24px;
-      background-color: #6e8898;
-      border-width: 2px;
-      border-color: #2E5266;
+      background-color: white;
+      border: 2px solid;
+      color: #2E5266;
       border-style: solid;
-      color: white;
       padding: 5px 25px;
 
       flex-basis:8rem;
@@ -258,6 +258,18 @@ a[href="#top"] {
 
 /* Footer – Desktop (790px and up) */
 @media (min-width: 790px) {
+      .header-grid {
+      display: flex;
+      flex-direction: row;
+      justify-content:left;
+    }
+
+    #logo {
+      margin: 15px;
+    }
+    .main_header {
+      flex-grow: 1;
+    }
   footer {
     background-color: #2E5266;
     border: 2px groove #2E5266;

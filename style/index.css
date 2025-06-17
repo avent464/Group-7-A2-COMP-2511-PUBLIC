@@ -199,6 +199,18 @@ h3 {
   }
   
   @media (min-width: 590px) and (max-width: 789px) {
+        .header-grid {
+      display: flex;
+      flex-direction: row;
+      justify-content:left;
+    }
+
+    #logo {
+      margin: 15px;
+    }
+    .main_header {
+      flex-grow: 1;
+    }
     .responsive-grid {
       justify-self: center;
       display: grid;
@@ -220,9 +232,10 @@ h3 {
       font-size: 24px;
 
       border-width: 2px;
+      background-color: white;
       border-color: #2E5266;
       border-style: solid;
-      color: white;
+      color: #2E5266;
       padding: 5px 25px;
 
       flex-basis:8rem;
