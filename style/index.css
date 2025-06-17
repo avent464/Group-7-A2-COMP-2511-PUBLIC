@@ -43,6 +43,7 @@ h3 {
     font-family: Calibri, Arial, Helvetica, sans-serif;
     font-size: 40px; 
 }
+
   
   
   /* menu */
@@ -140,9 +141,9 @@ h3 {
 
     .nav-menu > div a {
       font-size: 25px;
-      background-color: #6e8898;
+      background-color: white;
       border: 2px solid #2E5266;
-      color: white;
+      color: #2E5266;
       padding:5px 20px;
       width: 80%;           /* make buttons fill more horizontal space */
       text-align: center;
@@ -217,7 +218,7 @@ h3 {
 
     .nav-menu > div a {
       font-size: 24px;
-      background-color: #6e8898;
+
       border-width: 2px;
       border-color: #2E5266;
       border-style: solid;
@@ -301,11 +302,11 @@ h3 {
 
     .nav-menu > div a {
       font-size: 24px;
-      background-color: #6e8898;
+      background-color: white;
       border-width: 2px;
       border-color: #2E5266;
       border-style: solid;
-      color: white;
+      color: #2E5266;
       padding: 5px 25px;
 
       flex-basis:8rem;
@@ -378,8 +379,8 @@ h3 {
 
   input[type="reset"],
   input[type="submit"] {
-    background-color: #6e8898;
-    color: white;
+    background-color: white;
+    color: #2E5266;
     font-size: 18px;
     padding: 10px 20px;
     border: 2px solid #2E5266;

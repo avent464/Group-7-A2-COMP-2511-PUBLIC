@@ -39,7 +39,7 @@ header {
   display: block;
 }
 
-/* nav menu */
+/* Navigation */
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
@@ -49,25 +49,31 @@ header {
 }
 
 .nav-menu > div a {
-  font-size: 20px;
-  background-color: #6e8898;
-  border: 2px solid #2E5266;
-  color: white;
-  padding: 8px 20px;
-  text-decoration: none;
-  border-radius: 6px;
+    font-size: 24px;
+    background-color: #6e8898;
+    border-width: 2px;
+    border-color: #2E5266;
+    border-style: solid;
+    color: white;
+    padding: 5px 25px;
+    text-decoration: none; 
+
+    flex-basis:8rem;
 }
+
 
 /* titles */
 h1 {
   color: #2E5266;
   font-size: 38px;
+  text-align: center;
 }
 
 h2 {
   color: #6E8898;
   font-size: 28px;
   margin-top: 2rem;
+  text-align: center;
 }
 
 article {
@@ -77,10 +83,16 @@ article {
   text-align: left;
 }
 
+a#gned {
+  display: block;
+  text-align: center;
+}
+
 p {
   max-width: 1000px;
   margin: 0 auto 1rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 details {
@@ -92,6 +104,9 @@ details {
   transition: all 0.3s ease;
 }
 
+#gned {
+  color: #2E5266;
+}
 details summary {
   font-weight: bold;
   font-size: 18px;
@@ -173,48 +188,89 @@ a[href="#top"] {
 }  
 
 /* Footer – Mobile (<=589px) */
-@media (max-width: 589px) {
-  footer {
-    background-color: #2E5266;
-    border: 2px groove #2E5266;
-    text-align: center;
-    padding: 1rem;
+ @media (max-width: 589px) {
+    .header-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem; /* space between logo, title, nav */
+    }
+
+    #logo {
+      height: auto;
+    }
+
+    .main_header {
+      font-size: 35px; /* reduce from desktop size */
+      color: white;
+      margin: 0;
+      text-align: center;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+    }
+
+    .nav-menu > div a {
+      font-size: 25px;
+      background-color: #6e8898;
+      border: 2px solid #2E5266;
+      color: white;
+      padding:5px 20px;
+      width: 80%;           /* make buttons fill more horizontal space */
+      text-align: center;
+      margin:10px;
+    }
+
+    footer {
+      background-color: #2E5266;
+      border-width: 2px;
+      border-color: #2E5266;
+      border-style:groove;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+    .footer-container p {
+      color: white;
+    }
+    .footer-left, .footer-center, .footer-right {
+      justify-content: center;
+      flex: unset; /* Prevent stretching full width */
+      width: 100%;  /* Optional: make each section take full width */
+    }
+    .footer-center {
+      flex: 2;
+      text-align: center;
+    }
+
+    .footer-nav a {
+      display: block;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+
   }
 
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .footer-container p {
-    color: white;
-  }
-
-  .footer-left, .footer-center, .footer-right {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .footer-center {
-    flex: 2;
-    text-align: center;
-  }
-
-  .footer-nav a {
-    display: block;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    margin: 0.5rem 0;
-    text-decoration: none;
-  }
-
-  .footer-nav a:hover {
-    text-decoration: underline;
-  }
-}
+  
 
 /* Footer – Tablet (590px–789px) */
 @media (min-width: 590px) and (max-width: 789px) {
