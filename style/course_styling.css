@@ -1,4 +1,3 @@
-/* reset & base */
 * {
   font-family: Calibri, Arial, Helvetica, sans-serif;
   box-sizing: border-box;
@@ -29,7 +28,7 @@ header {
   display: block;
 }
 
-/* Navigation */
+/* nav menu */
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +48,6 @@ header {
 
     flex-basis:8rem;
 }
-
 
 /* titles */
 h1 {
@@ -176,7 +174,7 @@ a[href="#top"] {
   display: none;
 }  
 
-/* Footer – Mobile (<=589px) */
+/* mobile (<=589px) */
  @media (max-width: 589px) {
     .header-grid {
       display: flex;
@@ -236,8 +234,8 @@ a[href="#top"] {
     }
     .footer-left, .footer-center, .footer-right {
       justify-content: center;
-      flex: unset; /* Prevent stretching full width */
-      width: 100%;  /* Optional: make each section take full width */
+      flex: unset; /* prevent stretching full width */
+      width: 100%;  /* optional: make each section take full width */
     }
     .footer-center {
       flex: 2;
@@ -259,9 +257,7 @@ a[href="#top"] {
 
   }
 
-  
-
-/* Footer – Tablet (590px–789px) */
+/* tablet (590px–789px) */
 @media (min-width: 590px) and (max-width: 789px) {
   footer {
     background-color: #2E5266;
@@ -308,7 +304,7 @@ a[href="#top"] {
   }
 }
 
-/* Footer – Desktop (790px and up) */
+/* desktop (790px and up) */
 @media (min-width: 790px) {
   footer {
     background-color: #2E5266;
